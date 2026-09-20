@@ -1,0 +1,272 @@
+@import url(https://fonts-online.ru/fonts/montserrat);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #cbf7f4;
+    color: #222;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1280px;
+    margin: 50px auto;
+}
+
+/* HEADER */
+
+header .logo {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+header ul.nav {
+    float: right;
+    list-style: none;
+}
+
+header ul.nav li {
+    display: inline;
+    margin-left: 25px;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+}
+
+header ul.nav li:hover {
+    opacity: 0.5;
+}
+
+/* PRESENTATION */
+
+header .Presentation {
+    margin: 50px 0;
+    width: 100%;
+    height: 500px;
+    background: url('./img/31625_modulnaya-mebel-dlya-spal.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode: multiply;
+    background-color: #bcbcbc;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: 100%;
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.item h2 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+
+.item p {
+    margin: 3px 0;
+    font-size: 14px;
+}
+
+.item-buttons {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.item-buttons button {
+    height: 36px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    cursor: pointer;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+.item-buttons button:hover {
+    background: #ddd;
+}
+
+
+.item-buttons .cart {
+    flex: 1;
+    background: #248f86;
+    color: white;
+    border: none;
+}
+
+.item-buttons .cart:hover {
+    background: #1d766f;
+}
+
+
+.item-buttons .icon {
+    width: 36px;
+    padding: 0;
+    font-size: 17px;
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+@media (max-width: 1000px) {
+    main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .item img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header .logo {
+        font-size: 24px;
+    }
+
+    header ul.nav {
+        float: none;
+        margin-top: 20px;
+    }
+
+    header ul.nav li {
+        margin-left: 0;
+        margin-right: 15px;
+    }
+
+    header .Presentation {
+        height: 300px;
+        margin: 30px 0;
+    }
+
+    .item img {
+        height: 250px;
+    }
+}
+
+.sale {
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sale h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sale-content {
+    padding: 25px;
+    border-radius: 10px;
+    background: #cbf7f4;
+}
+
+.sale-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.sale-content p {
+    margin-bottom: 20px;
+}
+
+.sale-content button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #248f86;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.sale-content button:hover {
+    background: #1d766f;
+}
+
+.Brat {
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Brat h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.typoi-brat {
+    padding: 25px;
+    border-radius: 10px;
+    background: #cbf7f4;
+}
+
+.typoi-brat h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.typoi-brat p {
+    margin-bottom: 20px;
+}
+
+.typoi-brat button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    background: #248f86;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.typoi-brat button:hover {
+    background: #1d766f;
+}
