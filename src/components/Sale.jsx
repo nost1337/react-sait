@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 
 export default function Sale({ sale }) {
     
@@ -6,11 +6,10 @@ export default function Sale({ sale }) {
 
         const handClick = (event) => {
         console.log('Клик');
-    };
+    }
         return (
             <section className="sale">
                 <h2>🔥 Акции</h2>
-
                 <div className="sale-content">
                     <h3>Скидки до 30%</h3>
                     <p>

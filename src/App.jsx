@@ -1,49 +1,40 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
 import Items from "./components/Items.jsx";
-import Sale from "./components/sale.jsx";
+import Sale from "./components/Sale.jsx";
 
 function App() {
-    const [items] = useState([
-        {
-            id: 1,
-            title: "Стул серый",
-            img: "photo_2026-09-06_11-49-59.jpg",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            category: "chairs",
-            price: "49.99$"
-        },
-        {
-            id: 2,
-            title: "Диван",
-            img: "photo_2026-09-06_11-50-02.jpg",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            category: "Мягкая мебель",
-            price: "110.99$"
-        },
-        {
-            id: 3,
-            title: "Кресло",
-            img: "uou8480npeov3psjswq7fcrpoo1pfbjr.webp",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            category: "Стулья",
-            price: "110.99$"
-        },
-        {
-            id: 4,
-            title: "Диван",
-            img: "shopping.webp",
-            desc: "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            category: "Негры",
-            price: "220.99$"
-        }
-    ]);
+    const [items, setItems] = useState([]);
 
+      useEffect(() => {
+        const loadData = async () => {
+            try {
+                const response = await fetch("http://127.0.0.1:3000/items");
+                
+                if (!response.ok) {
+                    throw new Error(`Ошибка сервера: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                console.log("=== ДАННЫЕ УСПЕШНО ПРИШЛИ НА ФРОНТЕНД ===");
+                console.log(data); 
+
+                setItems(data);
+            } catch (error) {
+                console.error("=== ОШИБКА ПРИ ПОЛУЧЕНИИ ДАННЫХ ===");
+                console.error(error);
+            }
+        };
+
+        loadData();
+    }, []);
+    
     return (
         <div className="wrapper">
             <Header />
-            <Items items={items} />
+            <Items items={items}/>
             <Sale />
             <Footer />
         </div>
