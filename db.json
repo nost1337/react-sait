@@ -1,37 +1,60 @@
 {
-    "$schema": "./node_modules/json-server/schema.json",
-    "items": [
-        {
-            "id": 1,
-            "title": "Стул серый",
-            "img": "/photo_2026-09-06_11-49-59.jpg",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "category": "chairs",
-            "price": "49.99$"
-        },
-        {
-            "id": 2,
-            "title": "Диван",
-            "img": "/photo_2026-09-06_11-50-02.jpg",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "category": "Мягкая мебель",
-            "price": "110.99$"
-        },
-        {
-            "id": 3,
-            "title": "Кресло",
-            "img": "/uou8480npeov3psjswq7fcrpoo1pfbjr.webp",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "category": "Стулья",
-            "price": "110.99$"
-        },
-        {
-            "id": 4,
-            "title": "Диван",
-            "img": "/shopping.webp",
-            "desc": "Lorem ipsum dolor sit amet, consectetur adipisicing.",
-            "category": "Негры",
-            "price": "220.99$"
-        }
-    ]
+  "schema": "./node_modules/json-server/schema.json",
+  "items": [
+    {
+      "title": "",
+      "desc": "",
+      "price": "10000",
+      "id": "yUITh1c6MTA"
+    },
+    {
+      "title": "",
+      "desc": "",
+      "price": "100",
+      "id": "TvJ6fvmo--o"
+    },
+    {
+      "title": "",
+      "desc": "",
+      "price": "10000",
+      "id": "tSpYTIf8umk"
+    },
+    {
+      "title": "",
+      "desc": "",
+      "price": "1000",
+      "id": "tjFAwNtkU-s"
+    },
+    {
+      "title": "",
+      "desc": "",
+      "price": "222",
+      "id": "FIg6YJM44pQ"
+    },
+    {
+      "title": "",
+      "desc": "",
+      "price": "3333",
+      "id": "jNXGLp2nnnw"
+    },
+    {
+      "title": "",
+      "desc": "",
+      "price": "2222",
+      "id": "_YJ5AhLVNIs"
+    },
+    {
+      "title": "",
+      "desc": "",
+      "price": "0000",
+      "id": "BrUafx1e8wU"
+    },
+    {
+      "title": "FSDFSDF",
+      "desc": "FSDEF",
+      "price": "2000",
+      "id": "X2-zGCZg-gM"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

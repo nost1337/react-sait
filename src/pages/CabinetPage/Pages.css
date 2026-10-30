@@ -1,0 +1,42 @@
+/* Стили для кнопки в хедере кабинета */
+footer.cabinet-footer .nav-button-cabinet {
+    background-color: #2563eb !important; /* Синий цвет */
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer.cabinet-footer .nav-button-cabinet:hover {
+    background-color: #1d4ed8 !important;
+    transform: scale(1.05) !important;
+}
+
+footer.cabinet-footer .nav-button-cabinet:active {
+    transform: scale(0.97) !important;
+}
+
+h1.cabinet-title {
+    padding-top: 10px !important;
+    padding-left: 500px !important;
+}
+
+h2.balance-title {
+    padding-top: 10px ;
+    padding-left: 100x ;
+}
+h2.Korzina {
+    padding-top: 10px ;
+    padding-left: 100x ;
+}
+
+.cabinet-image {
+    width: 1300px;
+    height: 500px;
+}

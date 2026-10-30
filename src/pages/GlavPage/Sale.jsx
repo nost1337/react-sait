@@ -27,3 +27,8 @@ export default function Sale({ sale }) {
             </section>
         );
     }
+
+
+
+
+    
